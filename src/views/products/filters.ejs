@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<%- include("../partials/head") %>
+
+      <body>
+            <div class="container">
+
+                  <%- include("../partials/header") %>
+
+                        <main class="main-section">
+
+
+
+                              <%- include("../partials/product", {title: category , products: products }) %>
+
+                        </main>
+
+                        <%- include("../partials/footer") %>
+                              <%- include("../partials/scripts") %>
+
+            </div>
+      </body>
+
+</html>

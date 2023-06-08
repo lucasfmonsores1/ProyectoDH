@@ -1,0 +1,123 @@
+<header class="main-header">
+
+      <div class="main-top">
+            <div class="logo-nombre">
+                  <a href="/">
+                        <img src="/img/logo.png" alt="Logo" class="logo"></a>
+                  <div class="title-banner">
+                        <h4>FERRETERÍA</h4>
+                        <p>PICO & PALA</p>
+                  </div>
+
+            </div>
+            <nav class="main-nav-rigth" style="z-index: 9999;">
+                  <ul class="d-flex">
+                        <li>
+                              <a href="#" style="color: yellow;"><i class="fa-solid fa-star"></i></a>
+                              <p>Favoritos</p>
+                        </li>
+                        <li>
+                              <a href="/productos/carrito"><i class="fa-solid fa-cart-shopping iconos-white"></i></a>
+                              <p>$ 0.00</p>
+                        </li>
+                        <li>
+                              <% if (typeof session.user !="undefined" ){ %>
+                                    <div class="d-flex align-items-center">
+                                          <!-- Avatar -->
+
+                                          <div class="dropdown">
+                                                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                                                      id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                      <img src="/img/avatar/<%= session.user.avatar %>" class="rounded-circle" height="30" width="30"
+                                                            alt="Black and White Portrait of a Man" loading="lazy" />
+                                                      </i><span class="session"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar" style="z-index: 9999;">
+                                                      <% if ( session.user.typeOfAccess=="admin" ){ %>
+                                                            <li>
+                                                                  <a class="dropdown-item" href="/admin"><i class="fa-solid fa-users-gear"></i>
+                                                                        Admin</a>
+                                                            </li>
+                                                            <% } %>
+                                                                  <li>
+                                                                        <a class="dropdown-item" href="/users/profile"><i
+                                                                                    class="fa-solid fa-user"></i> Mi
+                                                                              Perfil</a>
+                                                                  </li>
+                                                                  <li>
+                                                                        <a class="dropdown-item" href="/users/logout"><i
+                                                                                    class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                                              Cerrar</a>
+                                                                  </li>
+                                                </ul>
+
+                                          </div>
+                                    </div>
+                                    <% } else { %>
+                                          <a href="/users/login"><i class="fa-solid fa-circle-up iconos-white"></i></a>
+                                          <p>Login</p>
+
+                                          <% } %>
+                        </li>
+                  </ul>
+            </nav>
+
+      </div>
+
+
+      <div class="main-search">
+            <div>
+                  <div class="d-flex align-items-center">
+                        <!-- Avatar -->
+
+                        <div class="dropdown">
+                              <a class="toggle-nav dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <img src="/img/menu.png" height="25" width="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                                    </i><span class="session"></span>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar" style="z-index: 9999;">
+
+                                    <li> <a class="dropdown-item" href="/productos/Todos los Productos">Productos</a> </li>
+                                    <li> <a class="dropdown-item" href="/productos/Climatización"></i>Climatización</a> </li>
+                                    <li> <a class="dropdown-item" href="/productos/Jardín y piscinas"></i>Jardín y Piscinas</a></li>
+                                    <li> <a class="dropdown-item" href="/productos/Para el hogar"></i> Para el Hogar</a></li>
+                                    <li> <a class="dropdown-item" href="/productos/Eléctricidad"></i>Eléctricidad</a> </li>
+                                    <li> <a class="dropdown-item" href="/productos/Herramientas"></i>Herramientas</a></li>
+                                    <li> <a class="dropdown-item" href="/productos/Ferretería"></i>Ferretería</a></li>
+
+
+                              </ul>
+
+                        </div>
+                  </div>
+                  <!-- <a href="#" class="toggle-nav">
+                        <span class="fas fa-bars"></span>
+                  </a> -->
+            </div>
+            <div class="search-container">
+                  <form action="/productos/buscar" method="GET">
+
+                        <input type="search" class="search" name="valor" placeholder=" Buscar en Pico & Pala">
+
+                        <button class="button-search" type="submit"><i class='fa-solid fa-magnifying-glass'></i></button>
+
+                  </form>
+            </div>
+      </div>
+
+      <nav class="main-nav">
+
+            <ul class="menu">
+                  <li><a href="/productos/Todos los Productos">Productos</a></li>
+                  <li><a href="/productos/Climatización">Climatización</a></li>
+                  <li><a href="/productos/Jardín y piscinas">Jardín y Piscinas</a></li>
+                  <li><a href="/productos/Para el hogar">Para el Hogar</a></li>
+                  <li><a href="/productos/Eléctricidad">Eléctricidad</a></li>
+                  <li><a href="/productos/Herramientas">Herramientas</a></li>
+                  <li><a href="/productos/Ferretería">Ferretería</a></li>
+            </ul>
+      </nav>
+
+
+</header>
