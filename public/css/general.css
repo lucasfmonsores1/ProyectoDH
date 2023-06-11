@@ -46,7 +46,7 @@ p.send {
 }
 body {
       padding: 15px 10px 0px;
-      background-color: var(--gris-oscuro);
+      background-color: var(--amarillo);
       width: 100%;
       margin: auto;
 }
@@ -91,7 +91,7 @@ header.main-header {
       justify-content: center;
       padding: 5px;
       margin-bottom: 10px;
-      background-image: url("/img/fondo banner.png");
+     /* background-image: url("/img/fondo banner.png");*/
       background-size: 100% 100%;
       border-radius: 5px;
 }
@@ -103,13 +103,13 @@ header.main-header div.main-top {
       margin-bottom: 10px;
 }
 header.main-header div.main-top .title-banner h4 {
-      color: var(--bordo);
+      color: var(--amarillo);
       font-family: var(--bs-body-font-family);
       margin-bottom: 0;
       font-size: 15px;
 }
 header.main-header div.main-top .title-banner p {
-      color: var(--bordo);
+      color: var(--amarillo);
       font-family: var(--bs-body-font-family);
       margin-bottom: 0;
       font-size: 11px;
@@ -121,11 +121,11 @@ header.main-header div.main-top div.logo-nombre {
       font-size: 15px;
 }
 header.main-header div.main-top div.logo-nombre div {
-      border-bottom: 3px solid var(--bordo);
+      border-bottom: 3px solid var(--amarillo);
 }
 header.main-header div.main-top div.logo-nombre img.logo {
-      width: 60px;
-      border-radius: 50%;
+      width: 120px;
+      
       margin-right: 5px;
 }
 /* header.main-header div.main-top nav.main-nav-rigth ul {
@@ -135,7 +135,7 @@ header.main-header div.main-top nav.main-nav-rigth ul li {
       text-align: center;
       font-size: 11px;
       margin: 5px 5px;
-      color: var(--bordo);
+      color: var(--amarillo);
 }
 
 header.main-header div.main-top nav.main-nav-rigth ul li:hover {
@@ -208,7 +208,7 @@ header.main-header nav.active {
       left: 10px;
       width: 95%;
       height: 250px;
-      background-color: var(--bordo);
+      background-color: var(--amarillo);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -246,14 +246,14 @@ header.main-header nav.main-nav ul.menu {
       font-size: var(--menu);
 } */
 header.main-header nav.main-nav ul li {
-      background-color: var(--bordo);
+      background-color: var(--amarillo);
       margin-bottom: 1px;
       padding: 5px;
       text-align: center;
 }
 header.main-header nav.main-nav ul li:hover {
-      border-bottom: 2px solid var(--rojo);
-      background-color: var(--bordo);
+      border-bottom: 2px solid var(--gris-claro);
+      background-color: var(--gris-oscuro);
       box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
       color: var(--bordo);
       transition: all 1s ease;
@@ -262,6 +262,119 @@ header.main-header nav.main-nav-rigth ul li p {
       color: black;
 }
 /* END HEADER */
+
+
+
+
+
+footer {
+      background-color: var(--amarillo);
+  }
+  
+  footer section div.menuFooter ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer section div.menuFooter ul li {
+      background-color: var(--gris-claro);
+      width: 150px;
+      height: 40px;
+      margin: 25px 25px 25px 25px;
+      padding-top: 10px;
+      text-align: center;
+      border: 1px solid black;
+      box-shadow: -5px 5px 10px var(--gris-oscuro);
+      border-radius: 5px;
+  }
+  
+  div.menuFooter ul li a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  div.menuFooter ul li:hover {
+      border-bottom: 2px solid rgb(123, 124, 123);
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+  }
+  
+  footer section div.redes {
+      text-align: center;
+      border-top: 1.5px solid black;
+      border-bottom: 1.5px solid black;
+      padding: 25px;
+      width: 98%;
+      margin: auto;
+  }
+  
+  footer section div.redes i {
+      color: grey;
+      font-size: 40px;
+      width: 3rem;
+  }
+  
+  footer section div.redes i:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease;
+  }
+  
+  footer section div.copy h4 {
+      color: grey;
+      padding: 5px;
+  }
+  
+  footer section div.descripcion h5 {
+      text-align: center;
+      color: grey;
+  }
+  
+  footer section div.logoFooter {
+      display: flex;
+      justify-content: center;
+      ;
+  }
+  
+  footer section div.qrFooter i {
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: right;
+      color: grey;
+  }
+  
+  
+  /* MEDIA QUERIES FOOTER */
+  
+  @media (min-width: 768px) {
+  
+  
+      footer section div.menuFooter ul {
+          flex-direction: row;
+          justify-content: center;
+      }
+  
+      footer section div.redes {
+          width: 80%;
+      }
+  
+      footer section div.copy h4 {
+          color: grey;
+          padding-left: 10%;
+      }
+  
+      footer section div.copy i {
+          font-size: 1.5rem;
+      }
+  
+      footer section div.qrFooter i {
+          padding-right: 10%;
+      }
+  }
+
+
+
+
 
 /* FOOTER */
 footer.main-footer {
@@ -333,8 +446,8 @@ footer.main-footer div.container-footer p {
             position: static;
       }
       header.main-header div.main-top div.logo-nombre img.logo {
-            width: 75px;
-            border-radius: 50%;
+            width: 200px;
+            
             margin-right: 5px;
       }
       header.main-header div.main-top nav.main-nav-rigth ul li p {

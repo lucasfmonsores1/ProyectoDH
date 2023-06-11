@@ -6,7 +6,7 @@ main {
       align-items: center;
       padding: 5px;
       margin-bottom: 10px;
-      background-color: var(--gris-claro);
+      background-color: var(--amarillo);
       border-radius: 5px;
 }
 main div.form-container img.image-register {

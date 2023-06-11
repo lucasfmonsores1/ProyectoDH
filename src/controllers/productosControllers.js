@@ -21,6 +21,7 @@ module.exports = {
                   const order = await getOrderByUser(idUser);
                   //return res.send(order);
                   res.render("products/carrito", { order, session: req.session });
+                  console.log(order)
             } catch (error) {
                   return res.status(500).json({ Error: `Error del Servidor ${error}` });
             }

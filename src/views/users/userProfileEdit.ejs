@@ -67,28 +67,12 @@
                                                             placeholder="Código postal"
                                                             value="<%= locals.old && locals.old.postal_code ? locals.old.postal_code : user.userdetail.postalCode %>">
                                                 </div>
-                                                <div class="input-container">
-                                                      <select class="form-control" name="province" id="province">
-                                                            <option value="" selected hidden>Provincia</option>
-                                                            <% provinces.forEach(province=> { %>
-                                                                  <option value="<%- province.nombre %>" <%- locals.old &&
-                                                                        old.province==province.nombre ? "selected" :
-                                                                        province.nombre==user.userdetail.province ? `selected` : "" %>>
-                                                                        <%- province.nombre%>
-                                                                  </option>
-                                                                  <% }) %>
-                                                      </select>
-                                                </div>
+                                                
                                                 <div class="input-container">
 
 
 
-                                                      <select class="form-control" name="city" id="city">
-                                                            <option value="" selected hidden>Localidad</option>
-
-                                                            <option value="<%- user.userdetail.city %>" selected id="option">
-                                                                  <%- user.userdetail.city %>
-                                                            </option>
+                                                      
 
                                                       </select>
                                                 </div>

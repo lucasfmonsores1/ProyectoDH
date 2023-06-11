@@ -16,10 +16,10 @@
                                     <!-- Llama a products.ejs que esta en la carpeta partials, y en el segundo parametro paso un
                                objeto literal con la propiedad title que es un string y la propiedad products que recibe un array 
                                que viene de productosController.js -->
-                                    <%- include("partials/product", {title:"✨Productos Destacados ✨", products: featured }) %>
+                                    <%- include("partials/product", {title:"Productos Destacados ", products: featured }) %>
                                           <a href="productos/featured">ver mas...</a>
 
-                                          <%- include("partials/product", {title:"🔥 ¡Ofertas Sólo Por Hoy! 🔥", products: inSale }) %>
+                                          <%- include("partials/product", {title:"¡Ofertas", products: inSale }) %>
                                                 <a href="productos/inSale">ver mas...</a>
 
 
