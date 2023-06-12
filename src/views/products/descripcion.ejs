@@ -79,21 +79,10 @@
 
                                     <div class="container-details">
                                           <div class="pago">
-                                                <p class="price">$ <%- product.price %></p>
-                                                <p>en 12x $ <%- (product.price*1.5)/12%></p>
+                                                <p class="price">$ <%- product.price %></p> 
                                           </div>
-                                          <div class="container-compra">
-                                                <p>
-                                                      <a href="#">Ver los medios de pago</a><br>
-                                                      Llega el martes xx de diciembre<br>
-                                                      Devolución gratis<br>
-                                                      Tenes 30 días desde que lo recibís<br>
-                                                      Stock disponible<br>
-                                                      cantidad unidades (<%- product.stock - product.sold %> disponibles)
-                                                </p>
-                                          </div>
-
-                                          <h3>Descripción del Producto</h3>
+                                          
+                                          <h3>Descripción</h3>
                                           <div class="conteineir-decription">
                                                 <p><%- product.description.replace(/\n/g, "<br />" ) %>
                                                 </p>
@@ -103,7 +92,7 @@
 
                               </section>
 
-                              <%- include("../partials/product", {title:"🔥 ¡OFERTAS SÓLO POR HOY! 🔥", products: inSale }) %>
+                              <%- include("../partials/product", {title:" ¡OFERTAS! ", products: inSale }) %>
 
 
                         </main>
