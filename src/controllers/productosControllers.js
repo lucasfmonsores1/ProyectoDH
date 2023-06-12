@@ -126,7 +126,7 @@ module.exports = {
             }
       },
       inSale: (req, res) => {
-            const category = "🔥 ¡OFERTAS SÓLO POR HOY! 🔥;";
+            const category = "¡OFERTAS!";
             Product.findAll({
                   where: {
                         discount: {
