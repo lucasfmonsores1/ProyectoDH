@@ -42,10 +42,10 @@ main.main-section section.vip-products div.container-title a {
       text-decoration: underline;
 }
 main.main-section section.vip-products article.product {
-      max-width: 130px;
+      max-width: 210px;
       margin: 20px 2px 10px 3px;
       padding: 5px;
-      background-color: white;
+      background-color: rgb(255, 255, 255);
       border-radius: 10px;
       width: 100%;
 }
@@ -68,8 +68,8 @@ main.main-section section.vip-products article.product .product-container div.va
 }
 main.main-section section.vip-products article.product .product-container div.descuento {
       position: absolute;
-      top: 0;
-      right: 0px;
+      top: 278px;
+      right: 189px;
       background-color: var(--rojo);
       color: white;
       border-radius: 10px;
@@ -110,7 +110,7 @@ main.main-section section.vip-products article.product h2.name {
             font-size: 30px;
       }
       main.main-section section.vip-products article.product {
-            max-width: 170px;
+            max-width: 230px;
       }
       /*main.main-section section.vip-products article.product div.product-container a.photo-container {
             height: 140px;

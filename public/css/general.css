@@ -3,12 +3,12 @@
 :root {
       /* Variables de colores */
       --amarillo: #eac926;
-      --bordo: #800c05;
-      --gris-claro: #f3efef;
-      --gris-medio: #bab9b9;
+      --bordo: #000000;
+      --gris-claro: #fcfcfc;
+      --gris-medio: #070707;
       --gris-oscuro: #555555;
-      --celeste: #1a91cd;
-      --rojo: #e92319;
+      --celeste: #080808;
+      --rojo: #46c000;
       --verde: #198754;
       /* Fuentes */
       --fuente: "Roboto", sans-serif;
@@ -39,6 +39,7 @@ p.price {
       color: var(--bordo);
       margin: 5px 0;
       font-weight: bold;
+      text-align: center;
 }
 p.send {
       font-size: 11px;
