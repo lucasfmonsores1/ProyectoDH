@@ -8,8 +8,9 @@ main {
       margin-bottom: 10px;
       background-color: var(--amarillo);
       border-radius: 5px;
-}
+}     
 main div.form-container img.image-register {
       width: 25%;
+      border-radius: 25px;
 }
 

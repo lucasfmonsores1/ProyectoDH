@@ -143,7 +143,7 @@ module.exports = {
             res.render("products/filters", { products, category, session: req.session }); */
       },
       featured: (req, res) => {
-            const category = "✨PRODUCTOS DESTACADOS ✨";
+            const category = "DESTACADOS";
             Product.findAll({
                   where: {
                         sold: {
