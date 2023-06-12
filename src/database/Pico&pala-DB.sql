@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
--- Host: localhost    Database: picopala
+-- Host: localhost    
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.20-MariaDB
 
@@ -18,8 +18,7 @@
 --
 -- Table structure for table `categorys`
 --
-CREATE DATABASE `PicoPala`;
-USE PicoPala;
+
 
 DROP TABLE IF EXISTS `categorys`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

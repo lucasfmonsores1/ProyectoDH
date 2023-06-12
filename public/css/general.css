@@ -144,7 +144,7 @@ header.main-header div.main-top nav.main-nav-rigth ul li:hover {
 
 header.main-header div.main-top nav.main-nav-rigth ul li i.iconos-white,
 header.main-header div.main-top nav.main-nav-rigth ul li p {
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 10px;
 }
 header.main-header div.main-search {

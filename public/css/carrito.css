@@ -14,7 +14,7 @@ main.main-section {
       border-radius: 5px;
 }
 main.main-section h2.titulo-carrito {
-      color: var(--bordo);
+      color: black;
       margin-bottom: 15px;
 }
 
