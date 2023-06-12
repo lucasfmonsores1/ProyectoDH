@@ -11,7 +11,7 @@ main.main-section {
       background-color: var(--amarillo);
       border-radius: 5px;
       position: relative;
-      z-index: 9998;
+      z-index: 9997;
 }
 main.main-section a.editarProduc {
       display: block;

@@ -14,27 +14,7 @@ el cual itero con un forEach y cargo cada campo donde corresponde  -->
                               <img class="photo" src="/img/<%- products[i].subcategory.category.name %>/<%- products[i].images.name %>" alt="">
                         </a>
 
-                        <div class="valoracion">
-                              <% if (products[i].sold>5 & products[i].sold<=10) { %>
-                                          <i class="fa-sharp fa-solid fa-star"></i>
-                                          <% } else if (products[i].sold>10 & products[i].sold<=20) { %>
-                                                      <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-                                                      <% } else if (products[i].sold>20 & products[i].sold<=30) { %>
-                                                                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
-                                                                        class="fa-sharp fa-solid fa-star"></i>
-                                                                  <% } else if (products[i].sold>30 & products[i].sold<=40) { %>
-                                                                              <i class="fa-sharp fa-solid fa-star"></i><i
-                                                                                    class="fa-sharp fa-solid fa-star"></i><i
-                                                                                    class="fa-sharp fa-solid fa-star"></i><i
-                                                                                    class="fa-sharp fa-solid fa-star"></i>
-                                                                              <% } else if (products[i].sold>40 & products[i].sold >50){ %>
-                                                                                    <i class="fa-sharp fa-solid fa-star"></i><i
-                                                                                          class="fa-sharp fa-solid fa-star"></i><i
-                                                                                          class="fa-sharp fa-solid fa-star"></i><i
-                                                                                          class="fa-sharp fa-solid fa-star"></i><i
-                                                                                          class="fa-sharp fa-solid fa-star"></i>
-                                                                                    <% } %>
-                        </div>
+                        
 
                         <% if (products[i].discount>0) { %>
                               <div class="descuento">

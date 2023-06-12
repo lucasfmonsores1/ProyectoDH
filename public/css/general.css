@@ -29,7 +29,7 @@
 }
 
 a {
-      color: white;
+      color: rgb(0, 0, 0);
       text-decoration: none;
 }
 ul {
@@ -253,13 +253,13 @@ header.main-header nav.main-nav ul li {
 }
 header.main-header nav.main-nav ul li:hover {
       border-bottom: 2px solid var(--gris-claro);
-      background-color: var(--gris-oscuro);
-      box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
-      color: var(--bordo);
+      
+      box-shadow: 3px 3px 8px rgb(255, 251, 0);
+      color: var(--amarillo);
       transition: all 1s ease;
 }
 header.main-header nav.main-nav-rigth ul li p {
-      color: black;
+      color: rgb(251, 255, 0);
 }
 /* END HEADER */
 

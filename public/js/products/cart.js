@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
                   idUser,
             };
             try {
-                  const response = await fetch("http://localhost:3060/api/v1/order/add", {
+                  const response = await fetch("http://localhost:3003/api/v1/order/add", {
                         method: "POST",
                         headers: {
                               "Content-Type": "application/json",
@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
                   const data = {
                         idUser,
                   };
-                  const response = await fetch(`http://localhost:3060/api/v1/order/remove/${idOrderItem} `, {
+                  const response = await fetch(`http://localhost:3003/api/v1/order/remove/${idOrderItem} `, {
                         method: "PUT",
                         headers: {
                               "Content-Type": "application/json",
@@ -70,7 +70,7 @@ window.addEventListener("load", () => {
                   const data = {
                         idUser,
                   };
-                  const response = await fetch(`http://localhost:3060/api/v1/order/remove/${idOrderItem} `, {
+                  const response = await fetch(`http://localhost:3003/api/v1/order/remove/${idOrderItem} `, {
                         method: "DELETE",
                         headers: {
                               "Content-Type": "application/json",
