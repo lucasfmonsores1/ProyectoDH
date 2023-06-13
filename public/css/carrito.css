@@ -1,9 +1,9 @@
 /* @import url("forms.css");
 @import url("products.css"); */
-.notVisible {
+/*.notVisible {
       display: none;
 }
-
+*/
 main.main-section {
       display: flex;
       flex-direction: column;
