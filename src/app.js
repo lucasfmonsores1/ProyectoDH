@@ -13,7 +13,7 @@ app.use(express.static("public")); //
 app.use(methodOverride("_method")); // Para poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(
       session({
-            secret: "Pico y Pala",
+            secret: "Ecommer",
             resave: false,
 
             saveUninitialized: true,

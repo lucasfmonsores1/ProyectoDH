@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
             let categoryId = event.target.value;
 
             try {
-                  const response = await fetch(`http://localhost:3060/api/v1/subCategories/category/${categoryId}`);
+                  const response = await fetch(`http://localhost:3003/api/v1/subCategories/category/${categoryId}`);
                   const { data } = await response.json();
                   selectSubcategory.innerHTML = "";
 

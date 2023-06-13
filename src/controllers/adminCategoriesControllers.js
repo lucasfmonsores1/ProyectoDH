@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 
 module.exports = {
       categories: (req, res) => {
-            fetch("http://localhost:3060/api/v1/categories/index")
+            fetch("http://localhost:3003/api/v1/categories/index")
                   .then((response) => response.json()) // Parsear la respuesta JSON
                   .then((categorias) => {
                         res.render("admin/adminCategories", { categorias: categorias.data, session: req.session }); // Renderizar la vista EJS con los datos del producto
