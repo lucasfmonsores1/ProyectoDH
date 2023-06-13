@@ -1,0 +1,21 @@
+
+.productList{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem; 
+  }
+  
+  .productsList h2 {
+
+    background-color: rgb(211, 18, 18);
+    color: rgb(138, 31, 27);
+  }
+  
+  .productsList p {
+    font-weight: bold;
+  }
+  
+  .productsList img {
+    width: 40rem;
+  }
+  

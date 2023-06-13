@@ -6,6 +6,14 @@ const methodOverride = require("method-override"); // Para poder usar los métod
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const cookieCheck = require("./middlewares/cookieCheck");
+const cors = require('cors');
+
+
+app.use(cors({
+      origin: 'http://localhost:3000',
+       // Define o domínio permitido
+      
+    }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false })); // Para poder usar el metodo POST
@@ -35,6 +43,21 @@ const adminRouter = require("./routes/admin");
 const categoriesRoutesApi = require("./routes/api/categoriesRoutes");
 const subCategoriesRoutesApi = require("./routes/api/subCategoriesRoutes");
 const orderApi = require("./routes/api/orderRutes");
+
+
+const [ 
+      userRouter, 
+      productRouter, 
+      orderRouter, 
+      categoryRouter
+    ] = require("./routes/api");
+
+
+    app.use(`/api/users`, userRouter);
+app.use(`/api/products`, productRouter);
+app.use(`/api/orders`, orderRouter);
+app.use(`/api/categories`, categoryRouter);
+
 
 /* MIDDLEWARES ROUTES */
 app.use("/", homeRouter);
