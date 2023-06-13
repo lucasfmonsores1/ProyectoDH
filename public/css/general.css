@@ -201,7 +201,15 @@ header.main-header nav.main-nav {
       width: 100%;
 }
 header.main-header nav.main-nav ul.menu li a {
-      font-size: 11px;
+    
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+      
 }
 header.main-header nav.active {
       position: fixed;
@@ -271,6 +279,7 @@ header.main-header nav.main-nav-rigth ul li p {
 
 footer {
       background-color: var(--amarillo);
+      margin-top: 20rem;
   }
   
   footer section div.menuFooter ul {
