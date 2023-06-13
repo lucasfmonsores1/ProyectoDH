@@ -71,10 +71,10 @@ body {
       margin: 15px 0;
 }
 .img-container-product {
-      width: 100%;
+      width: 320px;
       height: 200px;
-      border: thin solid gray;
-
+      border: thin solid rgb(121, 79, 1);
+      border-radius: 5px;
       text-align: center;
       margin: 15px 0;
 }

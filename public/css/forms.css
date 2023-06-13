@@ -87,6 +87,12 @@ h4 {
 }
 .agregar {
       text-align: right;
+      
+}
+.agregar a button{
+      color: white;
+      background-color: orange;
+      border: 1px black solid;
 }
 
 .btn {
