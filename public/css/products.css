@@ -92,6 +92,8 @@ main.main-section section.vip-products article.product .product-container img.ph
 }
 main.main-section section.vip-products article.product h2.name {
       color: var(--gris-medio);
+      text-align: center;
+
       font-size: 10px;
       font-weight: normal;
       padding: 3px 5px;
@@ -123,7 +125,7 @@ main.main-section section.vip-products article.product h2.name {
             max-height: 119px;
       }
       main.main-section section.vip-products article.product h2.name {
-            font-size: 12px;
+            font-size: 15px;
             height: 90px;
       }
       main.main-section section.vip-products article.product .product-container div.descuento {
