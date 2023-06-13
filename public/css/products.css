@@ -72,7 +72,7 @@ main.main-section section.vip-products article.product .product-container div.va
 }
 main.main-section section.vip-products article.product .product-container div.descuento {
       position: absolute;
-      top: 152px;
+      top: 228px;
       right: 170px;
       background-color: var(--rojo);
       color: white;
@@ -82,13 +82,14 @@ main.main-section section.vip-products article.product .product-container div.de
       width: 30px;
 }
 main.main-section section.vip-products article.product div.product-container a.photo-container {
-      height: 120px;
+      height: 201px;
 }
 main.main-section section.vip-products article.product .product-container img.photo {
-      width: 100%;
-      border-radius: 10px;
-      max-height: 100px;
+     object-fit: contain;
+      border-radius: 1px;
+      max-height: 149px;
       padding-top: 25px;
+
 }
 main.main-section section.vip-products article.product h2.name {
       color: var(--gris-medio);
@@ -122,7 +123,7 @@ main.main-section section.vip-products article.product h2.name {
             height: 140px;
       }*/
       main.main-section section.vip-products article.product .product-container img.photo {
-            max-height: 119px;
+            max-height: 165px;
       }
       main.main-section section.vip-products article.product h2.name {
             font-size: 15px;
@@ -130,7 +131,7 @@ main.main-section section.vip-products article.product h2.name {
       }
       main.main-section section.vip-products article.product .product-container div.descuento {
            
-            top: 215px;
+            top: 299px;
             right:187px ;
             
       }
@@ -148,7 +149,7 @@ main.main-section section.vip-products article.product h2.name {
             height: 180px;
       }
       main.main-section section.vip-products article.product .product-container img.photo {
-            max-height: 170px;
+            max-height: 164px;
       }
       main.main-section section.vip-products article.product .product-container div.descuento {
            
