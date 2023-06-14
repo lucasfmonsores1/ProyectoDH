@@ -1,8 +1,8 @@
-const { User } = require("../database/models");
+const { UserDetail } = require("../database/models");
 
 const getUsers = async () => {
   try {
-    return await User.findAll();
+    return await UserDetail.findAll();
   } catch (error) {
     console.error("Error while fetching users:", error);
     throw new Error("Error fetching users");

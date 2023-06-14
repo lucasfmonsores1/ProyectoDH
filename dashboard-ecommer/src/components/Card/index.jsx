@@ -30,11 +30,11 @@ export const Card = ({ color, title, quantity, icon, href }) => {
   );
 };
 
-/*Card.propTypes = {
+Card.propTypes = {
     color: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     quantity: PropTypes.number.isRequired,
     icon: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
-}*/
+}
 

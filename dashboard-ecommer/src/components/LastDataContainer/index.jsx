@@ -14,9 +14,10 @@ export const LastDataContainer = ({type, data}) => {
 
 		if (type === "product") {
 			setInfoToDisplay({
+				
 				title: "Último producto agregado: ",
 				name: data.name,
-				imageUrl: "productos/" + data.images[0].image,
+				imageUrl: data.subcategory.category.name + "/" + data.images.name ,
 				description: data.description
 			})
 		}
@@ -24,7 +25,7 @@ export const LastDataContainer = ({type, data}) => {
 		if(type === "user") {
 			setInfoToDisplay({
 				title: "Último Usuario agregado: ",
-				name: data.name,
+				name: data.firstName,
 				imageUrl:"avatar/" + data.avatar,
 				description: data.email
 			})
@@ -42,8 +43,8 @@ export const LastDataContainer = ({type, data}) => {
 						<h6>{name}</h6>
 					</div>
 					<div className="text-center">
-						<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: "40rem"}} src={"http://localhost:3030/img/" + imageUrl} alt="Imagen" />
-						<p>{type}</p>
+						<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: "20rem"}} src={"http://localhost:3003/img/" + imageUrl} alt="Imagen" />
+						
 					</div>
 					<p>{description}</p>
 				</div>
@@ -51,8 +52,8 @@ export const LastDataContainer = ({type, data}) => {
 		</div>
     )
 }
-/*
+
 LastDataContainer.propTypes = { 
 	type: PropTypes.string.isRequired,
 	data: PropTypes.object.isRequired,
-}*/
+}
