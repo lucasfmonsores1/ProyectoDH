@@ -6,7 +6,7 @@
             <div class="container">
                   <%- include('../partials/header')%>
                         <main class="userProfile d-flex">
-
+                              <section class="profileBox">
                               <div class="avatar mx-4">
                                     <img src="/img/avatar/<%= user.userdetail.avatar %>" alt="" class="rounded-circle" height="150" width="150">
                               </div>
@@ -36,6 +36,7 @@
                                     </div>
                                     <a href="/users/profile/edit/" class="btn btn-submit btn-info text-white w-100 mt-2">Editar datos</a>
                               </div>
+                        </section>
                         </main>
                         <%- include("../partials/footer") %>
                               <%- include('../partials/scripts')%>

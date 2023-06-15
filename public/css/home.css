@@ -44,7 +44,13 @@ section.banner img {
       background-color:rgba(255, 255, 255, 0.4);
       width: 100%;
 }
-
+.profileBox{
+      border-radius: 16px;
+      padding: 1.5rem;
+      background-color:rgba(255, 255, 255, 0.4);
+      width: 100%;
+      text-align: center;
+}
 /* PAYMENT METHODS */
 main.main-section section.payment-methods {
       display: flex;
