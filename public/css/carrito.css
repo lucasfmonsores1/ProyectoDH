@@ -1,9 +1,9 @@
 /* @import url("forms.css");
 @import url("products.css"); */
-.notVisible {
+/*.notVisible {
       display: none;
 }
-
+*/
 main.main-section {
       display: flex;
       flex-direction: column;
@@ -61,7 +61,7 @@ main.main-section section.shopping-cart-container article.product div.title-cont
 .price-total-container {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
 }
 .price-total {
       margin: 0px 1px;

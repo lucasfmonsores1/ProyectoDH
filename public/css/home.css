@@ -19,15 +19,29 @@ main.main-section a.editarProduc {
       height: 60%;
       color: white;
 }
-main.main-section a {
-      color: var(--celeste);
-      /* margin-bottom: 15px; */
+main.main-section a img.desplegar {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease-in-out;
 }
+main.main-section a img.desplegar:hover {
+
+      transform: translateY(10px);
+}
+
 section.banner {
       display: block;
       margin-bottom: 5px;
 }
 section.banner img {
+      width: 100%;
+      border-radius: 25px;
+}
+
+.mainWrapper { 
+      border-radius: 16px;
+      padding: 1.5rem;
+      background-color:rgba(255, 255, 255, 0.4);
       width: 100%;
 }
 
