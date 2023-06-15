@@ -36,6 +36,7 @@ section.banner {
 section.banner img {
       width: 100%;
       border-radius: 25px;
+      margin-top: 5rem;
 }
 
 .mainWrapper { 
