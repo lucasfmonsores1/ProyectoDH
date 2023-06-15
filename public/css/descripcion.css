@@ -1,12 +1,18 @@
-main.main-section {
+#price{
+      font-size: 40px;
+}
+
+#main-section{
+ background-color: rgba(255, 255, 255, 0.4);
+ border-radius: 16px;
+}   
+
+main.main-section section.container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 5px;
-      margin-bottom: 10px;
-      background-color: var(--gris-claro);
-      border-radius: 5px;
 }
+
+
 main.main-section section.container div.container-title p {
 
             font-size: 1rem;
@@ -18,6 +24,10 @@ main.main-section section.container div.container-title p {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
             
       
+}
+
+div.container-details{
+      align-items: center;
 }
  div.container-details h3{
   font-size: 20px;
@@ -82,9 +92,13 @@ main.main-section div.compra-container {
 
 main.main-section section.container div.container-compra,
 main.main-section section.container div.conteineir-decription {
-      font-size: 12px;
+      font-size: 17px;
       margin: 10px 0;
       padding: 10px 2px;
+      text-align: center;
+      text-align: justify;
+      padding-left: 7px;
+      padding-right: 7px;
 }
 main.main-section section.container div.container-compra p {
       margin: 5px 0;
@@ -125,6 +139,15 @@ main.main-section section.container div.conteineir-decrip div {
             background-color: var(--gris-claro);
             border-radius: 9px;
       }
+
+      main.main-section section.container {
+            flex-direction: row;
+      }
+
+      main.main-section section.container div.container-details {
+            max-width: 50%;
+      }
+
       main.main-section section.container div.container-title p {
             font-size: 2rem;
             font-weight: bold;
