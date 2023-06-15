@@ -1,27 +1,5 @@
 [
-      {
-            "id": 1,
-            "firstName": "Nestor Daniel Sebastian",
-            "lastName": "Faliani Martinez",
-            "email": "nedase@gmail.com",
-            "password": "123456",
-            "avatar": "1678886549090_avatar.png",
-            "typeOfAccess": "user",
-            "tel": "+542215080806",
-            "address": "Remedios de Escalada Esq N Gonzalez (Bº ATEPAM) nro 15",
-            "postal_code": "1925",
-            "province": "",
-            "city": ""
-      },
-      {
-            "id": 2,
-            "firstName": "admin",
-            "lastName": "admin",
-            "email": "admin@mail.com",
-            "password": "$2a$12$AcLtF439dsDoYNatXaFFveO8Pc4PsOXQdNBnuMBvIeXbMy9mHjdvy",
-            "avatar": "1678903650260_avatar.jpg",
-            "typeOfAccess": "admin"
-      },
+      
       {
             "id": 3,
             "firstName": "user",

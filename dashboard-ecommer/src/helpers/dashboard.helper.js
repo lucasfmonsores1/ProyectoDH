@@ -3,15 +3,15 @@ export const generateCards = (products, users) => {
     {
       id: 1,
       quantity: products.count,
-      color: "primary",
+      color: "warning",
       title: "Total de productos",
-      icon: "fa-box",
+      icon: "fa-burger",
       href: "/products"
     },
     {
       id: 2,
       quantity: users.count,
-      color: "secondary",
+      color: "info",
       title: "Total de usuarios",
       icon: "fa-users",
       href: "/users"

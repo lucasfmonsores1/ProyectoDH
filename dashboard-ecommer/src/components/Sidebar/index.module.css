@@ -1,0 +1,20 @@
+
+.bgSidebar{
+    background-color: var(--amarillo);
+}
+
+.link {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 0;
+    display: inline-block;
+    transition: all 1s;
+}
+
+.link:hover {
+    color: white !important;
+    border-bottom: 1px solid white;
+    
+}

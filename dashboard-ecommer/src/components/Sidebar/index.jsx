@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { SidebarLogo } from "./components/Logo";
 import Logo from "../../assets/logo.png";
 import { NavItem } from "./components/NavItem";
+import styles from "./index.module.css";
 
 const TITLE = "Dashboard Ecommer";
 
@@ -10,7 +11,7 @@ export const Sidebar = () => {
     <>
       {/* <!-- Sidebar --> */}
       <ul
-        className="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion"
+        className={`navbar-nav ${styles.bgSidebar} sidebar sidebar-dark accordion`}
         id="accordionSidebar"
       >
         {/* <!-- Sidebar - Brand --> */}
@@ -20,10 +21,10 @@ export const Sidebar = () => {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <Link to="/" className={styles.link}>
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>{TITLE}</span>
-          </a>
+          </Link>
         </li>
 
         {/* <!-- Divider --> */}
@@ -34,7 +35,7 @@ export const Sidebar = () => {
 
         {/* <!-- Nav Items --> */}
        
-        <NavItem href="/products" icon="fa-box" name="ABM - Productos"/>
+        <NavItem href="/products" icon="fa-box" name="Muestra de productos"/>
 
         {/* <!-- Divider --> */}
         <hr className="sidebar-divider d-none d-md-block" />
