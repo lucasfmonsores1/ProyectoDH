@@ -12,5 +12,7 @@ main {
 main div.form-container img.image-register {
       width: 25%;
       border-radius: 25px;
+      padding-bottom: 20px;
+      
 }
 
