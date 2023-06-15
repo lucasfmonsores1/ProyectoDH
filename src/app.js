@@ -11,7 +11,8 @@ const cors = require('cors');
 
 app.use(cors({
       origin: 'http://localhost:3000',
-       // Define o domínio permitido
+       // Define o domínio permitido para usar React
+       
       
     }));
 
@@ -64,6 +65,8 @@ app.use("/", homeRouter);
 app.use("/productos", productosRouter);
 app.use("/users", usuariosRouter);
 app.use("/admin", adminRouter);
+
+/* Rutas api alternativas*/ 
 app.use("/api/v1", categoriesRoutesApi);
 app.use("/api/v1", subCategoriesRoutesApi);
 app.use("/api/v1", orderApi);
