@@ -22,11 +22,7 @@ app.use(express.static("public")); //
 app.use(methodOverride("_method")); // Para poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(
       session({
-<<<<<<< HEAD
-            secret: "Ecommer",
-=======
             secret: "ecommer",
->>>>>>> origin
             resave: false,
 
             saveUninitialized: true,

@@ -126,11 +126,7 @@ module.exports = {
             }
       },
       inSale: (req, res) => {
-<<<<<<< HEAD
-            const category = " OFERTAS;";
-=======
             const category = "¡OFERTAS!";
->>>>>>> origin
             Product.findAll({
                   where: {
                         discount: {
@@ -147,11 +143,7 @@ module.exports = {
             res.render("products/filters", { products, category, session: req.session }); */
       },
       featured: (req, res) => {
-<<<<<<< HEAD
-            const category = "PRODUCTOS DESTACADOS ";
-=======
             const category = "DESTACADOS";
->>>>>>> origin
             Product.findAll({
                   where: {
                         sold: {
