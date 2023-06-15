@@ -11,7 +11,14 @@
                         <main class="main-section">
                               <h2 class="titulo-carrito">Carrito de compras</h2>
 
-                              <%- include("../partials/cart", {order}) %>
+                              
+
+                              <% if (!order || order.length === 0) { %>
+                                    <p class="msj">No tenes productos en el carrito.</p>
+                                    <a href="http://localhost:3003/productos/Todos%20los%20Productos" class="link">Seguir comprando</a>
+                                    <% } else { %>
+                                    <%- include("../partials/cart", {order}) %>
+                                    <% } %>
 
                                     <section class="cupon-container">
                                           <div class="form-container">
